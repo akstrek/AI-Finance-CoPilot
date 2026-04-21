@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /c/Users/amrit/OneDrive/Documents/AI_Projects/AI-Finance-CoPilot stash list)",
+      "Bash(git -C /c/Users/amrit/OneDrive/Documents/AI_Projects/AI-Finance-CoPilot stash show stash@{0} --stat)",
+      "Bash(git -C /c/Users/amrit/OneDrive/Documents/AI_Projects/AI-Finance-CoPilot log --all --oneline)",
+      "Bash(git -C /c/Users/amrit/OneDrive/Documents/AI_Projects/AI-Finance-CoPilot show 9556e96 --stat)",
+      "Bash(git -C /c/Users/amrit/OneDrive/Documents/AI_Projects/AI-Finance-CoPilot show studio-updates --stat)",
+      "Bash(git -C /c/Users/amrit/OneDrive/Documents/AI_Projects/AI-Finance-CoPilot ls-tree -r studio-updates --name-only)"
+    ]
+  }
+}

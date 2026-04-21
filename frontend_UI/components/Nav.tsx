@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 export default function Nav() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -59,9 +60,9 @@ export default function Nav() {
           <a href="#nexus-search"><span className="ad">◆ </span>Nexus</a>
           <a href="#end-root"><span className="ad">◆ </span>Root</a>
         </div>
-        <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <button className="nav-cta">Connect</button>
-          <div className="pulse-dot" />
+        <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <Link href="/auth" className="text-[11px] font-bold uppercase tracking-widest text-[#00ff50]/80 hover:text-white transition-colors">Log In</Link>
+          <Link href="/signup" className="bg-[#00ff50] text-[#020402] px-5 py-2 rounded-full font-bold text-[11px] uppercase tracking-wider hover:bg-[#00ff50]/90 transition-all shadow-[0_0_15px_rgba(0,255,80,0.2)]">Sign Up</Link>
         </div>
         <div
           className="mobile-toggle"
@@ -84,7 +85,10 @@ export default function Nav() {
           <a href="#arc" onClick={() => scrollTo('arc')}>Arc</a>
           <a href="#nexus-search" onClick={() => scrollTo('nexus-search')}>Nexus</a>
           <a href="#end-root" onClick={() => scrollTo('end-root')}>Root</a>
-          <button className="hero-cta" style={{ marginTop: '24px' }}>Connect</button>
+          <div className="flex flex-row gap-3 mt-12 w-full px-8">
+            <Link href="/auth" className="hero-cta flex-1 justify-center" style={{ background: 'transparent', border: '1px solid rgba(0,255,80,0.3)', color: 'white', padding: '12px 0', marginTop: 0 }} onClick={() => setIsMobileMenuOpen(false)}>Log In</Link>
+            <Link href="/signup" className="hero-cta flex-1 justify-center" style={{ background: 'var(--accent)', color: 'black', border: 'none', padding: '12px 0', marginTop: 0 }} onClick={() => setIsMobileMenuOpen(false)}>Sign Up</Link>
+          </div>
         </div>
       </div>
     </>

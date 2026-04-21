@@ -3,6 +3,7 @@ import './globals.css'
 import Nav from '@/components/Nav'
 import ParticleCanvas from '@/components/ParticleCanvas'
 import BackToTop from '@/components/BackToTop'
+import LLMBadge from '@/components/LLMBadge'
 
 export const metadata: Metadata = {
   title: 'Luce — AI Finance Copilot',
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         {children}
         <BackToTop />
+        <LLMBadge />
       </body>
     </html>
   )
