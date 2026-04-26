@@ -136,7 +136,7 @@ All compute:      Vercel Edge (Next.js) + Modal (Python)
 ## ⚙️ Run Locally
 
 ```powershell
-git clone https://github.com/akstrek/ai-finance-copilot.git
+git clone https://github.com/akstrek/Luce-AI-Finance-CoPilot.git
 cd ai-finance-copilot
 python -m venv venv
 .\venv\Scripts\Activate.ps1
