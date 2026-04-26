@@ -153,7 +153,7 @@ Every user interaction writes to `analytics_events`. Five metrics tracked out of
 ### 1 — Clone and install
 
 ```bash
-git clone https://github.com/akstrek/ai-finance-copilot.git
+git clone https://github.com/akstrek/Luce-AI-Finance-CoPilot.git
 cd ai-finance-copilot/frontend_UI
 npm install
 ```
